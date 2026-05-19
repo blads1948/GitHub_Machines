@@ -20,4 +20,4 @@ jobs:
       - name: Configuring Ngrok Token ..
         run: ngrok config add-authtoken ${{ secrets.NGROK_TOKEN }}
       - name: Running Ngrok ..   
-        run: ngrok http 8080
+        run: ngrok http --url=https://e7f9-151-250-117-176.ngrok-free.app 8080
